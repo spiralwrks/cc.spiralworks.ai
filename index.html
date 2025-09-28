@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Your paper description">
+    <meta name="keywords" content="research, AI, paper keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Combinatorial Creativity: A New Frontier in Generalization Abilities</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+
+    <!-- Academicons for arXiv, etc. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Siimple Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple-icons/siimple-icons.css" />
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="starry-background" id="starry-background"></div>
+
+    <!-- Simple navigation -->
+    <div class="site-nav">
+        <a href="https://spiralworks.ai" class="back-link">
+            <i class="si-arrow-left"></i>
+            Back to Spiral Works
+        </a>
+    </div>
+
+    <div class="app-container dither-background">
+        <!-- Hero Section -->
+        <section class="hero-section" style="min-height: auto; padding: 4rem 2rem;">
+            <div class="text-container" style="text-align: center;">
+                <h1 class="hero-title">Combinatorial Creativity: A New Frontier in Generalization Abilities</h1>
+                <div class="hero-tagline" style="margin: 2rem 0;">
+                    <div>
+                        <span class="author-block">
+                            Samuel Schapiro<sup>1</sup>,
+                        </span>
+                        <span class="author-block">
+                            Sumuk Shashidhar<sup>2</sup>,
+                        </span>
+                        <span class="author-block">
+                            Alexi Gladstone<sup>2</sup>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="author-block">
+                            Jonah Black<sup>2</sup>,
+                        </span>
+                        <span class="author-block">
+                            Royce Moon<sup>1</sup>,
+                        </span>
+                        <span class="author-block">
+                            Dilek Hakkani-Tur<sup>2</sup>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="author-block">
+                            Lav R. Varshney<sup>3</sup>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="affiliations">
+                    <div><sup>1</sup>Spiral Works</div>
+                    <div><sup>2</sup>University of Illinois, Urbana-Champaign</div>
+                    <div><sup>3</sup>AI Innovation Institute, Stony Brook University</div>
+                </div>
+
+                <!-- Links -->
+                <div class="paper-links">
+                    <a href="https://www.alphaxiv.org/overview/2509.21043v1" class="paper-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>alphaXiv</span>
+                    </a>
+                    <a href="https://arxiv.org/abs/2509.21043" class="paper-link">
+                        <i class="ai ai-arxiv"></i>
+                        <span>arXiv</span>
+                    </a>
+                    <a href="#" class="paper-link">
+                        <i class="fab fa-github"></i>
+                        <span>Code</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <div class="content-sections" style="padding-top: 0.1rem;">
+            <div class="text-container">
+                <div class="section-block">
+                    <h2>Introduction</h2>
+                    <p>
+                            LLMs are increasingly used for creative tasks, yet we lack proper ways to evaluate and understand their creative abilities. We provide the first systematic evaluation framework for <b>combinatorial creativity (CC)</b>, uncovering fundamental 
+                            limitations that persist even as models scale.
+                    </p>
+                </div>
+
+                <!-- Abstract -->
+                <div class="section-block">
+                    <div class="collapsible-container">
+                        <div class="collapsible-header collapsed" onclick="toggleSection('abstract')">
+                            <h2>Abstract</h2>
+                            <i id="abstract-icon" class="si-chevron-down collapse-icon"></i>
+                        </div>
+                        <div id="abstract" class="collapsible-content" style="display: none;">
+                        <p>
+Artificial intelligence (AI) systems, and large language models (LLMs) in particular, are increasingly employed for creative tasks like scientific idea generation, constituting a form of generalization from training data unaddressed by existing conceptual frameworks. 
+<br><br>
+Though in many ways similar to forms of compositional generalization (CG), combinatorial creativity (CC) is an open-ended ability. Instead of evaluating for accuracy or correctness against fixed targets, which would contradict the open-ended nature of CC, we propose a theoretical framework and algorithmic task for evaluating outputs by their degrees of novelty and utility. 
+<br><br>
+From here, we make several important empirical contributions:
+</p>
+<ul style="margin: 1rem 0; padding-left: 2rem; line-height: 1.8;">
+<li style="margin-bottom: 0.8rem;">(1) We obtain the first insights into the scaling behavior of creativity for LLMs.</li>
+<li style="margin-bottom: 0.8rem;">(2) We discover that, for fixed compute budgets, there exist optimal model depths and widths for creative ability.</li>
+<li style="margin-bottom: 0.8rem;">(3) We find that the ideation-execution gap, whereby LLMs excel at generating novel scientific ideas but struggle to ensure their practical feasibility, may be explained by a more fundamental novelty-utility tradeoff characteristic of creativity algorithms in general.</li>
+</ul>
+<p style="margin-top: 1rem;">
+Importantly, this tradeoff remains persistent even at scale, casting doubt on the long-term creative potential of LLMs in their current form. Together, our conceptual framework and empirical findings provide a foundation for understanding and improving creativity in modern AI models, marking a new frontier in generalization abilities.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Contributions -->
+                <div class="section-block">
+                    <h2>Key Contributions</h2>
+                    <p>
+                        <b>Theoretical Framework:</b> We propose the first mathematical framework for evaluating combinatorial creativity, modeling it as pathfinding in conceptual spaces where models must discover novel connections between concepts while satisfying logical
+                           constraints.
+                    </p>
+
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <img src="https://paper-assets.alphaxiv.org/figures/2509.21043v1/img-0.jpeg"
+                             alt="Combinatorial Creativity Framework"
+                             style="max-width: 80%; height: auto; border-radius: 8px;">
+                        <p style="font-size: 0.9rem; color: var(--text-color); opacity: 0.8; margin-top: 1rem; font-style: italic;">
+                            Since Mednick (1962), creative ability has been associated with richer associative hierarchies that enable combinations of distant representations, leading to breakthrough discoveries.
+                        </p>
+                    </div>
+
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <img src="assets/Combinatorial Creativity.png"
+                             alt="Combinatorial Creativity Algorithm"
+                             style="max-width: 80%; height: auto; border-radius: 8px;">
+                        <p style="font-size: 0.9rem; color: var(--text-color); opacity: 0.8; margin-top: 1rem; font-style: italic;">
+                            Our algorithmic framework for evaluating combinatorial creativity: Models are trained on concept-relation-concept triples from a conceptual graph, then prompted to generate creative "ideas" (paths) between distant concepts while satisfying inclusion-exclusion constraints.
+                        </p>
+                    </div>
+
+                    <p>
+                        <b>Architectural Insights:</b> Through systematic experiments on 1M, 10M, and 100M parameter GPT-2 style decoder-only Transformers, we reveal:
+                    </p>
+
+                    <ul style="margin: 1.5rem 0; padding-left: 2rem;">
+                        <li style="margin-bottom: 1rem;">
+                            <b>Optimal Architecture:</b> For fixed compute budgets, there exist optimal model depths and widths for creativity (peak around 8 layers for 100M models, E/L ratio of 200-300)
+                        </li>
+                        <li style="margin-bottom: 1rem;">
+                            <b>Scaling Behavior:</b> While overall creativity scores improve with model size, we discover the first insights into how creativity scales with compute
+                        </li>
+                    </ul>
+
+                    <p style="margin-top: 2rem;">
+                        <b>Fundamental Limitation:</b> We discover a persistent <b>novelty-utility tradeoff</b> that remains constant across all scales - as models generate more novel ideas, they increasingly struggle with practical constraints. This explains the "ideation-execution gap" where LLMs excel at generating creative ideas but fail at ensuring feasibility.
+                    </p>
+                </div>
+
+                <!-- Implications -->
+                <div class="section-block">
+                    <h2>Implications</h2>
+                    <p>
+                            This <b>scale-invariant</b> tradeoff suggests that simply making models larger may not solve creativity limitations in current architectures. Instead of just needing more parameters, <b>creative AI may require fundamental architectural innovations</b>. Our framework provides the first systematic approach for understanding and improving AI creativity, revealing both the potential and the intrinsic limitations of current approaches.
+                    </p>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Citation -->
+                <div class="section-block">
+                    <h2>BibTeX</h2>
+                        <pre class="bibtex"><code>@misc{schapiro2025combinatorialcreativitynew,
+      title={Combinatorial Creativity: A New Frontier in Generalization Abilities},
+      author={Samuel Schapiro and Sumuk Shashidhar and Alexi Gladstone and Jonah Black and Royce Moon and Dilek Hakkani-Tur and Lav R. Varshney},
+      year={2025},
+      eprint={2509.21043},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2509.21043},
+}</code></pre>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2025 Spiral Works, Inc. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Generate starry background
+        function generateStarryBackground() {
+            const starryBackground = document.getElementById('starry-background');
+            const starCount = 500;
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('span');
+                star.className = 'star';
+                star.textContent = '*';
+
+                const top = Math.random() * 100;
+                const left = Math.random() * 100;
+                const delay = Math.random() * 3;
+
+                star.style.top = `${top}%`;
+                star.style.left = `${left}%`;
+                star.style.animationDelay = `${delay}s`;
+
+                starryBackground.appendChild(star);
+            }
+        }
+
+        // Initialize stars when page loads
+        document.addEventListener('DOMContentLoaded', generateStarryBackground);
+
+        // Toggle collapsible sections
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId);
+            const icon = document.getElementById(sectionId + '-icon');
+            const header = icon.closest('.collapsible-header');
+
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                icon.className = 'si-chevron-up collapse-icon';
+                header.classList.remove('collapsed');
+            } else {
+                content.style.display = 'none';
+                icon.className = 'si-chevron-down collapse-icon';
+                header.classList.add('collapsed');
+            }
+        }
+    </script>
+</body>
+</html>
