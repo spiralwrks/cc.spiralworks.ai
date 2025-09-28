@@ -1,4 +1,4 @@
-# Computational Creativity: A New Frontier in Generalization Abilities Research Paper Website
+# Computational Creativity: A New Frontier in Generalization Abilities Landing Page
 
 This repository hosts the static website for our research paper at [cc.spiralworks.ai](https://cc.spiralworks.ai).
 
